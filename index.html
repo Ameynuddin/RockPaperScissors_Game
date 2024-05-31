@@ -11,28 +11,26 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
 
-<body> <i class='fa fa-hand-rock-o'></i> </body>
-
 </html>
 </head>
 
 <body>
     <div id="container">
         <div id="scores">
-            <h1>Computer: </h1>
-            <h1>You: </h1>
+            <h1 id="computer_score">Computer: </h1>
+            <h1 id="user_score">You: </h1>
         </div>
         <div id="weapons">
-            <button><i class='fa fa-hand-rock-o'></i> </button>
-            <button><i class='fa fa-hand-paper-o'></i>
+            <button onclick="checkResult('rock')"><i class='fa fa-hand-rock-o'></i> </button>
+            <button onclick="checkResult('paper')"><i class='fa fa-hand-paper-o'></i>
             </button>
-            <button><i class='fa fa-hand-scissors-o'></i>
+            <button onclick="checkResult('scissors')"><i class='fa fa-hand-scissors-o'></i>
             </button>
         </div>
         <div id="details">
-            <p>Computer Choice</p>
-            <p>Your Choice</p>
-            <p>Result</p>
+            <p id="computer_text" >Computer Choice</p>
+            <p id="user_text">Your Choice</p>
+            <p id="result_text">Result</p>
         </div>
     </div>
 </body>
